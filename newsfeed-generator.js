@@ -1,10 +1,15 @@
 const axios = require('axios')
 
 class GreenNewsFeedBuilder {
-	constructor(search, igSearch, ytSearch) { // arrays of search terms
+	constructor(search, ytSearch) { // arrays of search terms
 		this.googleData = new NewsFeedComponent(search);
 		// this.igSearch = new InstagramFeedComponent(igSearch);
 		// this.ytSearch = new YoutubeFeedComponent(ytSearch)
+
+	}
+
+	createGreenFeed(){
+
 	}
 }
 
@@ -48,4 +53,4 @@ class YoutubeFeedComponent {
 	}
 }
 
-const GreenNewsFeed = new GreenNewsFeedBuilder(['green', 'energy'], ['green'], ['green'])
+const GreenNewsFeed = new GreenNewsFeedBuilder(['green', 'energy'], ['green', 'energy'], ['green', 'energy'])
