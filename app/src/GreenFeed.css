@@ -5,6 +5,11 @@
   height: 20%;
   transition: 0.3s;
   margin: 4%;
+  background-image: url('./green-vine-border-hi.png');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 
 .highres {
@@ -32,12 +37,17 @@
 }
 
 h4 {
+  color: brown;
   margin: 1%;
 }
 
 .sourcename {
   margin: 1%;
   font-size: 70%;
+}
+
+hr {
+  margin: 0;
 }
 
 .description {
