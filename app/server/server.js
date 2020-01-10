@@ -4,7 +4,7 @@ const GreenNewsFeedBuilder = require('./newsfeed-generator')
 
 const bodyParser = require('body-parser');
 
-const NewsFeed = new GreenNewsFeedBuilder(['green energy', 'solar panels', 'tesla']) // put this in a cronjob to get new articles
+const NewsFeed = new GreenNewsFeedBuilder(['green energy', 'solar panels', 'tesla'], []) // put this in a cronjob to get new articles
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -2,9 +2,10 @@ const axios = require('axios')
 const rp = require('request-promise')
 
 class GreenNewsFeedBuilder {
-	constructor(searchTerms) { // arrays of search terms
+	constructor(searchTerms, blacklistedTerms) { // arrays of search terms
 		this.feed = [];
 		this.searchTerms = searchTerms
+		this.blacklistedTerms = blacklistedTerms
 		this.data = []
 
 		this.getNews()
