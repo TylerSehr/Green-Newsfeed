@@ -4,13 +4,20 @@
   border-radius: 2%;
   height: 20%;
   transition: 0.3s;
-  margin: 2%;
+  margin: 4%;
 }
 
-img {
+.highres {
   border-radius: 2%;
   height: 100%;
   width: 100%;
+}
+
+.lowres {
+  margin: 2%;
+  float: left;
+  height: 10%;
+  width: 10%
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -34,5 +41,6 @@ h4 {
 
 .description {
   margin: 1%;
-  font-size: 90%
+  font-size: 90%;
+  color: darkgreen;
 }
