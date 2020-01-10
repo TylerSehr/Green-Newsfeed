@@ -42,7 +42,7 @@ h4 {
 }
 
 .sourcename {
-  margin: 1%;
+  margin: 2%;
   font-size: 70%;
 }
 
@@ -53,5 +53,5 @@ hr {
 .description {
   margin: 2%;
   font-size: 80%;
-  color: darkgreen;
+  color: darkolivegreen;
 }
