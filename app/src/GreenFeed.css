@@ -23,6 +23,7 @@
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Add some padding inside the card container */
@@ -40,7 +41,7 @@ h4 {
 }
 
 .description {
-  margin: 1%;
-  font-size: 90%;
+  margin: 2%;
+  font-size: 80%;
   color: darkgreen;
 }

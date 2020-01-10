@@ -15,25 +15,19 @@ class GreenFeedCard extends React.Component {
 
 		console.log(this.props.article);
 
-		let imageStyle = 'highres'
-
 		let reactThis = this;
-
 		let img = new Image();
 		img.src = this.props.article.urlToImage;
 		img.onload = function () {
-			if (this.width < 200) {
+			if (this.width < 200 && reactThis.state.imageStyle === 'highres') {
 				reactThis.setState({
 					imageStyle: 'lowres'
 				})
-				
 			}
 		}
-		
-
 
 		return (
-			<div className="card">
+			<div className="card" onClick={() => {window.location.href = this.props.article.url }}>
 				<img className={this.state.imageStyle} src={this.props.article.urlToImage} alt="Avatar" />
 				<div className="container">
 					<h4><b>{this.props.article.title}</b></h4>
